@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Заявки</title>
+	<link rel="stylesheet" href="css.css">
+</head>
+<body>
+
+	<!-- Переход на следующий экран -->
+	<a href="15.2. Одобренная заявка торги.html">следующий экран</a>
+
+
+<header>
+	<div class="header__title">Банковские гарантии</div>
+	<nav>
+		<ul>
+			<li class="active"><a href="#">Мои заявки</a></li>
+			<li><a href="#">Аукционы</a></li>
+			<li><a href="#">Аналитика</a></li>
+		</ul>
+	</nav>
+	<div class="search-bar"><input type="text"></div>
+	<div class="account-control">
+		<div class="all-companies">Все компании</div>
+		<!-- <div class="account-name">+7 (900) 789-56-34</div> -->
+		<a href="#" class="icon--settings"></a>
+		<a href="#" class="icon--logout"></a>
+	</div>
+</header>
+
+<!-- Основное содержимое -->
+<main>
+	<div class="content-wrapper full-height adaptive-small-paddings">
+		<div class="content">
+			<h2>Текущие заявки</h2>
+
+			<aside class="top-bar">
+				<!-- Вкладки -->
+				<ul class="tabs">
+					<li class="tab">Все</li>
+					<li class="tab">На рассмотрении</li>
+					<li class="tab">Одобрены</li>
+					<li class="tab tab--active">Торги банков</li>
+					<li class="tab">Выданы</li>
+					<li class="tab">Отказаны</li>
+					<li class="tab">Отменены</li>
+					<li class="tab">Черновики</li>
+				</ul>
+
+				<!-- Свитчер (grid/list) -->
+				<div class="view-switcher applications list">
+					<i class="view--grid"></i>
+					<i class="view--list"></i>
+				</div>
+			</aside>
+
+			<!-- Плитки (grid-view / list-view) -->
+			<div class="tiles-container tiles--grid-list applications--client list-view">
+				<!-- <div class="tile add-new"></div> -->
+				
+				<aside class="header-row">
+					<div class="number">№ заявки</div>
+					<div class="company">Компания</div>
+					<div class="type">Тип гарантии</div>
+					<div class="auction">Аукцион №, заказчик</div>
+					<div class="amount">Сумма гарантии</div>
+					<div class="guarantee-period">Срок выдачи</div>
+					<div class="accepted">Принято банком</div>
+				</aside>
+
+				<div class="tile">
+					<div class="number">0002664</div>
+					<div class="company">ООО «Стройпромгазсервис»</div>
+					<div class="type">ФЗ 223</div>
+					<div class="kind">На гарантийные обязательства</div>
+					<div class="auction">54598563214569875412</div>
+					<div class="customer">ООО «Ространссельхозмаш»</div>
+					<div class="amount inline">1 850 000,<span class="decimal">27</span> ₽</div>
+					<div class="guarantee-period inline">14 сентября</div>
+					<div class="accepted">5 из 10</div>
+				</div>
+
+				<div class="tile">
+					<div class="number">0002664</div>
+					<div class="company">ООО «Стройпромгазсервис»</div>
+					<div class="type">ФЗ 223</div>
+					<div class="kind">На гарантийные обязательства</div>
+					<div class="auction">54598563214569875412</div>
+					<div class="customer">ООО «Ространссельхозмаш»</div>
+					<div class="amount inline">1 850 000,<span class="decimal">27</span> ₽</div>
+					<div class="guarantee-period inline">14 сентября</div>
+					<div class="accepted">5 из 10</div>
+				</div>
+
+				<div class="tile">
+					<div class="number">0002664</div>
+					<div class="company">ООО «Стройпромгазсервис»</div>
+					<div class="type">ФЗ 223</div>
+					<div class="kind">На гарантийные обязательства</div>
+					<div class="auction">54598563214569875412</div>
+					<div class="customer">ООО «Ространссельхозмаш»</div>
+					<div class="amount inline">1 850 000,<span class="decimal">27</span> ₽</div>
+					<div class="guarantee-period inline">14 сентября</div>
+					<div class="accepted">5 из 10</div>
+
+					<i class="label--alert">1</i>
+				</div>
+
+				<div class="tile">
+					<div class="number">0002664</div>
+					<div class="company">ООО «Стройпромгазсервис»</div>
+					<div class="type">ФЗ 223</div>
+					<div class="kind">На гарантийные обязательства</div>
+					<div class="auction">54598563214569875412</div>
+					<div class="customer">ООО «Ространссельхозмаш»</div>
+					<div class="amount inline">1 850 000,<span class="decimal">27</span> ₽</div>
+					<div class="guarantee-period inline">14 сентября</div>
+					<div class="accepted">5 из 10</div>
+				</div>
+			</div>
+
+			<div class="buttons-container bottom">
+				<button class="secondary">Площадка</button>
+			</div>
+		</div>
+	</div>
+</main>
+
+<footer>
+	<a href="#">Правила работы платформы</a>
+	<a href="#">Инструкция по использованию</a>
+	<a href="#">Частые вопросы</a>
+	<a href="#">Контакты</a>
+
+	<div class="footer__role">п</div>
+</footer>
+
+<script src="view-switcher.js"></script>
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+</body>
+</html>

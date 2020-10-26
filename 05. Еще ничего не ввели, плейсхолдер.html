@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Добавление компании</title>
+	<link rel="stylesheet" href="css.css">
+</head>
+<body>
+
+	<!-- Переход на следующий экран -->
+	<a href="06. Добавление компании_ввод ИНН.html">следующий экран</a>
+
+	<header>
+		<div class="header__title">Банковские гарантии</div>
+		<nav>
+			<ul>
+				<li class="active"><a href="#">Мои заявки</a></li>
+				<li><a href="#">Аукционы</a></li>
+				<li><a href="#">Аналитика</a></li>
+			</ul>
+		</nav>
+		<div class="search-bar"><input type="text"></div>
+		<div class="account-control">
+			<div class="all-companies">Все компании</div>
+			<!-- <div class="account-name">+7 (900) 789-56-34</div> -->
+			<a href="#" class="icon--settings"></a>
+			<a href="#" class="icon--logout"></a>
+		</div>
+	</header>
+
+	<!-- Основное содержимое -->
+	<main>
+		<div class="content-wrapper page page--add-company">
+			<!-- Виджет этапов -->
+			<div class="stages-widget stage-1">
+				<div class="stage">Выбор компании</div>
+				<div class="stage">Данные аукциона</div>
+				<div class="stage">Проверка данных</div>
+				<div class="stage">Список банков</div>
+				<div class="stage">Подписание документов</div>
+				<div class="stage">Отправка заявки</div>
+			</div>
+		
+			<div class="content">
+				<h1>Добавление компании</h1>
+				<p class="description-text">Введите название, ИНН или адрес</p>
+				
+				<input class="big-text" type="text" placeholder="Введите в свободной форме наименование, ИНН, ОГРН или регион">
+			</div>
+		</div>
+	</main>
+
+	<footer>
+		<a href="#">Правила работы платформы</a>
+		<a href="#">Инструкция по использованию</a>
+		<a href="#">Частые вопросы</a>
+		<a href="#">Контакты</a>
+
+		<div class="footer__role">к</div>
+	</footer>
+
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+</body>
+</html>

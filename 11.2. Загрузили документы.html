@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Список банков</title>
+	<link rel="stylesheet" href="css.css">
+</head>
+<body>
+
+	<!-- Переход на следующий экран -->
+	<a href="12. Подписание документов ЭЦП.html">следующий экран</a>
+
+
+<header>
+	<div class="header__title">Банковские гарантии</div>
+	<nav>
+		<ul>
+			<li class="active"><a href="#">Мои заявки</a></li>
+			<li><a href="#">Аукционы</a></li>
+			<li><a href="#">Аналитика</a></li>
+		</ul>
+	</nav>
+	<div class="search-bar"><input type="text"></div>
+	<div class="account-control">
+		<div class="all-companies">Все компании</div>
+		<!-- <div class="account-name">+7 (900) 789-56-34</div> -->
+		<a href="#" class="icon--settings"></a>
+		<a href="#" class="icon--logout"></a>
+	</div>
+</header>
+
+<!-- Основное содержимое -->
+<main>
+	<div class="content-wrapper page page--banks-list">
+		<!-- Виджет этапов -->
+		<div class="stages-widget stage-4">
+			<div class="stage">Выбор компании</div>
+			<div class="stage">Данные аукциона</div>
+			<div class="stage">Проверка данных</div>
+			<div class="stage">Список банков</div>
+			<div class="stage">Подписание документов</div>
+			<div class="stage">Отправка заявки</div>
+		</div>
+
+		<div class="content">
+			<h1>Список банков</h1>
+			<p class="description-text">Выберите интересующие вас банки. <br><br>Эти банки рассмотрят вашу заявку с основным пакетом документов:</p>
+
+			<!-- Плитки (Банки) -->
+			<div class="tiles-container banks">
+				<div class="tile modulbank docs-uploaded">
+					<div class="logo"></div>
+					<div class="conditions">от 5 часов от 3,2%</div>
+					<input type="checkbox" id="id1">
+					<label for="id1"></label>
+				</div>
+				<div class="tile sberbank ">
+					<div class="logo"></div>
+					<div class="conditions">от 8 часов от 3,1%</div>
+					<input type="checkbox" id="id2">
+					<label for="id2"></label>
+				</div>
+				<div class="tile alfabank ">
+					<div class="logo"></div>
+					<div class="conditions">от 1 дня от 3,4%</div>
+					<input type="checkbox" id="id3" checked>
+					<label for="id3"></label>
+				</div>
+				<div class="tile lokobank ">
+					<div class="logo"></div>
+					<div class="conditions">от 5 часов от 3,2%</div>
+					<input type="checkbox" id="id4">
+					<label for="id4"></label>
+				</div>
+				<div class="tile moscreditbank ">
+					<div class="logo"></div>
+					<div class="conditions">от 8 часов от 3,1%</div>
+					<input type="checkbox" id="id5">
+					<label for="id5"></label>
+				</div>
+				<div class="tile raiffeisenbank docs-uploaded">
+					<div class="logo"></div>
+					<div class="conditions">от 1 дня от 3,4%</div>
+					<input type="checkbox" id="id6" checked>
+					<label for="id6"></label>
+				</div>
+			</div>
+			
+			<p class="description-text">Для этих банков потребуются дополнительные документы:</p>
+			
+			<!-- Плитки (Банки) -->
+			<div class="tiles-container banks">
+				<div class="tile svyazbank ">
+					<div class="logo"></div>
+					<div class="conditions">от 5 часов от 3,2%</div>
+					<input type="checkbox" id="id7">
+					<label for="id7"></label>
+				</div>
+				<div class="tile slavyanskycreditbank docs-uploaded">
+					<div class="logo"></div>
+					<div class="conditions">от 8 часов от 3,1%</div>
+					<input type="checkbox" id="id8">
+					<label for="id8"></label>
+				</div>
+				<div class="tile mibank ">
+					<div class="logo"></div>
+					<div class="conditions">от 1 дня от 3,4%</div>
+					<input type="checkbox" id="id9">
+					<label for="id9"></label>
+				</div>
+				<div class="tile interprombank docs-uploaded">
+					<div class="logo"></div>
+					<div class="conditions">от 5 часов от 3,2%</div>
+					<input type="checkbox" id="1id0">
+					<label for="1id0"></label>
+				</div>
+				<div class="tile spbbank docs-uploaded">
+					<div class="logo"></div>
+					<div class="conditions">от 8 часов от 3,1%</div>
+					<input type="checkbox" id="1id1">
+					<label for="1id1"></label>
+				</div>
+				<div class="tile metallinvestbank ">
+					<div class="logo"></div>
+					<div class="conditions">от 1 дня от 3,4%</div>
+					<input type="checkbox" id="1id2">
+					<label for="1id2"></label>
+				</div>
+			</div>
+
+			<!-- Документы -->
+			<h2>Пакет документов нужно загрузить только один раз:</h2>
+			<div class="tiles-container documents documents--main">
+				<div class="tile docs-uploaded">
+					<a href="" class="icon--close"></a>
+					<p class="text--main">Годовая отчетность за последний завершенный год</p>
+				</div>
+				<div class="tile">
+					<p class="text--main">Налоговая декларация</p>
+					<p class="text--hover">За последний отчетный период</p>
+				</div>
+				<div class="tile">
+					<p class="text--main">Налоговая декларация</p>
+					<p class="text--hover">За последний отчетный период</p>
+				</div>
+				<div class="tile docs-uploaded">
+					<a href="" class="icon--close"></a>
+					<p class="text--main">Паспорт генерального директора</p>
+					<p class="text--hover">За последний отчетный период</p>
+				</div>
+				<div class="tile">
+					<p class="text--main">Годовая отчетность за последний завершенный год</p>
+					<p class="text--hover">За последний отчетный период</p>
+				</div>
+				<div class="tile">
+					<p class="text--main">ИНН</p>
+					<p class="text--hover">За последний отчетный период</p>
+				</div>
+				<div class="tile docs-uploaded">
+					<a href="" class="icon--close"></a>
+					<p class="text--main">ОГРН или выписка о регистрации</p>
+					<p class="text--hover">За последний отчетный период</p>
+				</div>
+				<div class="tile docs-uploaded">
+					<a href="" class="icon--close"></a>
+					<p class="text--main">Устав последней редакции</p>
+					<p class="text--hover">За последний отчетный период</p>
+				</div>
+				<div class="tile">
+					<p class="text--main">Подтверждение полномочий ЕИО</p>
+					<p class="text--hover">За последний отчетный период</p>
+				</div>
+				<div class="tile">
+					<p class="text--hover">За последний отчетный период</p>
+					<p class="text--main">Выписка из реестра акционеров Принципала (только для АО)</p>
+				</div>
+				<div class="tile">
+					<p class="text--main">Договор аренды</p>
+					<p class="text--hover">За последний отчетный период</p>
+				</div>
+			</div>
+
+			<p class="description-text">Дополнительно потребуются:</p>
+			<div class="tiles-container documents tiles-with-icons">
+				<div class="tile">
+					<p class="text--main">Лицензия</p>
+					<p class="text--hover">За последний отчетный период</p>
+					<flex class="bank-icons">
+						<i class="icon-modulbank"></i>
+						<i class="icon-alfabank"></i>
+						<i class="icon-sberbank"></i>
+					</flex>
+				</div>
+				<div class="tile">
+					<p class="text--main">Доверенность, нотариально заверенная на подписанта</p>
+					<p class="text--hover">За последний отчетный период</p>
+					<flex class="bank-icons">
+						<i class="icon-modulbank"></i>
+					</flex>
+				</div>
+				<div class="tile docs-uploaded">
+					<a href="" class="icon--close"></a>
+					<p class="text--main">Удостоверение личности подписанта по доверенности</p>
+					<p class="text--hover">За последний отчетный период</p>
+					<flex class="bank-icons">
+						<i class="icon-modulbank"></i>
+						<i class="icon-alfabank"></i>
+						<i class="icon-sberbank"></i>
+					</flex>
+				</div>
+				<div class="tile">
+					<p class="text--main">Свидетельство о собственности</p>
+					<p class="text--hover">За последний отчетный период</p>
+					<flex class="bank-icons">
+						<i class="icon-alfabank"></i>
+					</flex>
+				</div>
+			</div>
+			
+			<div class="buttons-container">
+				<button class="clean">добавить сотрудника</button>
+				<button class="primary">отправить</button>
+			</div>
+			<p class="description-text">Сотрудник площадки изучит заявку и запросит допоплнительные документы при необходимости. <br>После одобрения сотрудником вы сможете отправить заявку в банки.</p>
+		</div>
+	</div>
+</main>
+
+<footer>
+	<a href="#">Правила работы платформы</a>
+	<a href="#">Инструкция по использованию</a>
+	<a href="#">Частые вопросы</a>
+	<a href="#">Контакты</a>
+
+	<div class="footer__role">к</div>
+</footer>
+
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+</body>
+</html>

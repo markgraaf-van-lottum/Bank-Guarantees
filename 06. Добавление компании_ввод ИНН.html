@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Добавление компании</title>
+	<link rel="stylesheet" href="css.css">
+</head>
+<body>
+
+	<!-- Переход на следующий экран -->
+	<a href="05.1. Создание заявки_выбор компании.html">следующий экран</a>
+
+	<header>
+		<div class="header__title">Банковские гарантии</div>
+		<nav>
+			<ul>
+				<li class="active"><a href="#">Мои заявки</a></li>
+				<li><a href="#">Аукционы</a></li>
+				<li><a href="#">Аналитика</a></li>
+			</ul>
+		</nav>
+		<div class="search-bar"><input type="text"></div>
+		<div class="account-control">
+			<div class="all-companies">Все компании</div>
+			<!-- <div class="account-name">+7 (900) 789-56-34</div> -->
+			<a href="#" class="icon--settings"></a>
+			<a href="#" class="icon--logout"></a>
+		</div>
+	</header>
+
+	<!-- Основное содержимое -->
+	<main>
+		<div class="content-wrapper page page--add-company">
+			<!-- Виджет этапов -->
+			<div class="stages-widget stage-1">
+				<div class="stage">Выбор компании</div>
+				<div class="stage">Данные аукциона</div>
+				<div class="stage">Проверка данных</div>
+				<div class="stage">Список банков</div>
+				<div class="stage">Подписание документов</div>
+				<div class="stage">Отправка заявки</div>
+			</div>
+		
+			<div class="content">
+				<h1>Добавление компании</h1>
+				<p class="description-text">Введите название, ИНН или адрес</p>
+				
+				<input class="big-text" type="text" placeholder="Введите в свободной форме наименование, ИНН, ОГРН или регион" value="500" autofocus>
+
+				<!-- Список результатов поиска -->
+				<div class="found-companies-list">
+					<p class="list-desc-text">Выберите вариант или продолжите ввод</p>
+					<ul>
+						<li>
+							<p class="company__name">ООО "Компания <mark>500</mark>"</p>
+							<p class="company__info">
+								<span>50 05 04567 8</span>
+								<span class="company__address">Московская обл, г Балашиха, деревня Черное, ул Агрогородок, д 10Московская обл, г Балашиха, деревня Черное, ул Агрогородок, д 10</span>
+							</p>
+						</li>
+						<li>
+							<p class="company__name">МКДОУ Д/С № <mark>500</mark></p>
+							<p class="company__info">
+								<span>50 05 04567 8</span>
+								<span class="company__address">Московская обл, г Балашиха, деревня Черное, ул Агрогородок, д 10</span>
+							</p>
+						</li>
+						<li>
+							<p class="company__name">ПМУП "Аптека №<mark>500</mark>"</p>
+							<p class="company__info">
+								<span>50 05 04567 8</span>
+								<span class="company__address">Московская обл, г Балашиха, деревня Черное, ул Агрогородок, д 10</span>
+							</p>
+						</li>
+						<li>
+							<p class="company__name">Коллегия адвокатов №40/<mark>500</mark></p>
+							<p class="company__info">
+								<span>50 05 04567 8</span>
+								<span class="company__address">Московская обл, г Балашиха, деревня Черное, ул Агрогородок, д 10</span>
+							</p>
+						</li>
+						<li>
+							<p class="company__name">ФКУ "Войсковая часть <mark>500</mark>82</p>
+							<p class="company__info">
+								<span>50 05 04567 8</span>
+								<span class="company__address">Московская обл, г Балашиха, деревня Черное, ул Агрогородок, д 10</span>
+							</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<footer>
+		<a href="#">Правила работы платформы</a>
+		<a href="#">Инструкция по использованию</a>
+		<a href="#">Частые вопросы</a>
+		<a href="#">Контакты</a>
+
+		<div class="footer__role">к</div>
+	</footer>
+
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+</body>
+</html>

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Данные аукциона</title>
+	<link rel="stylesheet" href="css.css">
+</head>
+<body>
+
+	<!-- Переход на следующий экран -->
+	<a href="16.1.2. БГ - загрузили форму заказчика.html">следующий экран</a>
+
+
+<header>
+	<div class="header__title">Банковские гарантии</div>
+	<nav>
+		<ul>
+			<li class="active"><a href="#">Мои заявки</a></li>
+			<li><a href="#">Аукционы</a></li>
+			<li><a href="#">Аналитика</a></li>
+		</ul>
+	</nav>
+	<div class="search-bar"><input type="text"></div>
+	<div class="account-control">
+		<div class="all-companies">Все компании</div>
+		<!-- <div class="account-name">+7 (900) 789-56-34</div> -->
+		<a href="#" class="icon--settings"></a>
+		<a href="#" class="icon--logout"></a>
+	</div>
+</header>
+
+<!-- Основное содержимое -->
+<main>
+	<div class="content-wrapper page page--application page--auction">
+		<div class="go-back">Список заявок</div>
+		
+		<div class="content">
+			<h1>№ 000658</h1>
+
+			<aside class="top-bar">
+				<!-- Вкладки -->
+				<ul class="tabs">
+					<li class="tab">Компания</li>
+					<li class="tab tab--active">Аукцион</li>
+					<li class="tab">Опыт клиента</li>
+					<li class="tab">Документы</li>
+				</ul>
+			</aside>
+
+			<!-- Форма - данные аукциона -->
+			<form class="auction-data" action="">
+				<!-- допкласс filled -->
+				<div class="input-with-icon filled">
+					<label class="input-label">Номер аукциона или ссылка</label>
+					<input type="text" id="auction-number" placeholder="Номер аукциона или ссылка" required value="256586545698756365478">
+					<a class="icon--link" href="https://www.etp-torgi.ru/trades/privatization/Auction2/?action=view&" target="_blank">Перейти</a>
+					<a href="#" class="icon--help"></a>
+				</div>
+
+				<div class="flex-row">
+					<div class="select-wrapper selected">
+						<label class="input-label">Вид гарантии</label>
+						<select name="" id="" required>
+							<option value="" disabled>Вид гарантии</option>
+							<option value="">пункт 1</option>
+							<option value="" selected>Гарантия на возврат аванса</option>
+							<option value="">пункт 3</option>
+							<option value="">пункт 4</option>
+						</select>
+					</div>
+
+					<div class="label-value">
+						<label class="input-label">Закон</label>
+						<p class="value">44 ФЗ</p>
+					</div>
+				</div>
+				
+				<div class="flex-row">
+					<div class="input--inline">
+						<label class="input-label">Срок с</label>
+						<!-- временные дата-селекты  ? -->
+						<input type="date" value="2018-12-17">
+					</div>
+					<div class="input--inline">
+						<label class="input-label">По</label>
+						<!-- временные дата-селекты  ? -->
+						<input type="date" value="2019-02-14">
+					</div>
+					<div class="label-value">
+						<label class="input-label">Количество дней</label>
+						<p class="value">60</p>
+					</div>
+				</div>
+
+				<div class="select-block">
+					<label class="input-label">Крайний срок выдачи гарантии</label>
+					<!-- временные дата-селекты  ? -->
+					<input type="date" value="2019-02-12">
+				</div>
+
+				<div class="label-value">
+					<label class="input-label">Наименование бенефициара</label>
+					<input type="text" value="Министерство дорожного строительства">
+				</div>
+
+				<div class="select-wrapper selected">
+					<label class="input-label">Работы / услуги</label>
+					<select name="" id="" required>
+						<option value="" disabled></option>
+						<option value="">пункт 1</option>
+						<option value="" selected>Строительные услуги</option>
+						<option value="">пункт 3</option>
+						<option value="">пункт 4</option>
+					</select>
+				</div>
+
+				<div class="label-value">
+					<label class="input-label">Перечень работ</label>
+					<textarea rows="4">Текущий ремонт помещения №4. Лаборатория: "Процессы, формы образования, металлообработка и инструменты", Здание ГБПОУ "ПГК", расположенное по адресу: г. Самара, ул. Ново-Садовая, д.106 литер А8; литер А4; литер А4-А7</textarea>
+				</div>
+
+				<div class="label-value">
+					<label class="input-label">Сумма гарантии</label>
+					<input type="text" value="129 800,50 ₽">
+				</div>
+
+				<div class="select-wrapper selected">
+					<label class="input-label">Аванс в контракте</label>
+					<select name="" id="" required>
+						<option value="" selected>Да</option>
+						<option value="">Нет</option>
+					</select>
+				</div>
+
+				<!-- комментарий -->
+				<div class="label-value">
+					<label class="input-label">Комментарий</label>
+					<p class="value">Прошу рассмотреть мою заявку как можно скорее, желательно не позже следующего понедельника</p>
+				</div>
+
+			</form>
+
+		</div>
+
+		<!-- Нижняя панель -->
+		<div class="page__bottom-panel">
+			<div class="select-wrapper selected">
+				<label class="input-label">Форма гарантии</label>
+				<select name="" id="" required>
+					<option value="" disabled >Форма гарантии</option>
+					<option value="" selected>Форма заказчика</option>
+					<option value="">пункт 2</option>
+					<option value="">пункт 3</option>
+				</select>
+			</div>
+			<!-- Загруженный документ -->
+			<!-- <p class="document-item link">
+				<a href="#">Форма заказчика</a>
+				<i class="icon--close"></i>
+			</p> -->			
+
+			<div class="select-wrapper ">
+				<label class="input-label">Статус заявки</label>
+				<select name="" id="" required>
+					<option value="" disabled selected>Статус заявки</option>
+					<option value=""></option>
+					<option value="">пункт 2</option>
+					<option value="">пункт 3</option>
+				</select>
+			</div>
+
+			<button class="secondary">Сохранить</button>
+
+			<div class="upload-area">Загрузите форму гарантии</div>
+		</div>
+	</div>
+</main>
+
+<footer>
+	<a href="#">Правила работы платформы</a>
+	<a href="#">Инструкция по использованию</a>
+	<a href="#">Частые вопросы</a>
+	<a href="#">Контакты</a>
+
+	<div class="footer__role">п</div>
+</footer>
+
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+</body>
+</html>

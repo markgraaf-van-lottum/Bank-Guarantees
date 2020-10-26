@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Заявки</title>
+	<link rel="stylesheet" href="css.css">
+</head>
+<body>
+
+	<!-- Переход на следующий экран -->
+	<a href="15. На рассмотрении.html">следующий экран</a>
+
+
+<header>
+	<div class="header__title">Банковские гарантии</div>
+	<nav>
+		<ul>
+			<li class="active"><a href="#">Мои заявки</a></li>
+			<li><a href="#">Аукционы</a></li>
+			<li><a href="#">Аналитика</a></li>
+		</ul>
+	</nav>
+	<div class="search-bar"><input type="text"></div>
+	<div class="account-control">
+		<div class="all-companies">Все компании</div>
+		<!-- <div class="account-name">+7 (900) 789-56-34</div> -->
+		<a href="#" class="icon--settings"></a>
+		<a href="#" class="icon--logout"></a>
+	</div>
+</header>
+
+<!-- Основное содержимое -->
+<main>
+	<div class="content-wrapper full-height adaptive-small-paddings">
+		<div class="content">
+			<h1>Текущие заявки</h1>
+
+			<aside class="top-bar">
+				<!-- Вкладки -->
+				<ul class="tabs">
+					<li class="tab tab--active">Все</li>
+					<li class="tab">На рассмотрении</li>
+				</ul>
+
+				<!-- Свитчер -->
+				<!-- допкласс list -->
+				<div class="view-switcher applications grid">
+					<i class="view--grid"></i>
+					<i class="view--list"></i>
+				</div>
+			</aside>
+
+			<!-- Плитки -->
+			<!-- grid-view / list-view -->
+			<div class="tiles-container tiles--grid-list applications--client grid-view">
+				<div class="tile add-new"></div>
+				
+				<aside class="header-row">
+					<div class="number">№ заявки</div>
+					<div class="company">Компания</div>
+					<div class="type">Тип гарантии</div>
+					<div class="auction">Аукцион №, заказчик</div>
+					<div class="amount">Сумма гарантии</div>
+					<div class="guarantee-period">Срок выдачи</div>
+					<div class="accepted">Принято банком</div>
+				</aside>
+
+				<!-- Статус "На рассмотрении" -->
+				<div class="tile status--on-review">
+					<div class="number">0002664</div>
+					<div class="company">ООО «Стройпромгазсервис»</div>
+					<div class="type">ФЗ 223</div>
+					<div class="kind">На гарантийные обязательства</div>
+					<div class="auction">54598563214569875412</div>
+					<div class="customer">ООО «Ространссельхозмаш»</div>
+					<div class="amount inline">100 850 000,<span class="decimal">27</span> ₽</div>
+					<div class="guarantee-period inline">14 сентября</div>
+					<div class="accepted">5 из 10</div>
+
+					<i class="label"></i>
+				</div>
+			</div>
+
+			<div class="buttons-container bottom">
+				<button class="secondary">Площадка</button>
+			</div>
+		</div>
+	</div>
+</main>
+
+<footer>
+	<a href="#">Правила работы платформы</a>
+	<a href="#">Инструкция по использованию</a>
+	<a href="#">Частые вопросы</a>
+	<a href="#">Контакты</a>
+
+	<div class="footer__role">к</div>
+</footer>
+
+<script src="view-switcher.js"></script>
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+</body>
+</html>

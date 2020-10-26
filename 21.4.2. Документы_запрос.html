@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Документы</title>
+	<link rel="stylesheet" href="css.css">
+</head>
+<body>
+
+	<!-- Переход на следующий экран -->
+	<a href="21.5. Заявка в банке_предложение банка.html">следующий экран</a>
+
+
+<header>
+	<div class="header__title">Банковские гарантии</div>
+	<nav>
+		<ul>
+			<li class="active"><a href="#">Мои заявки</a></li>
+			<li><a href="#">Аукционы</a></li>
+			<li><a href="#">Аналитика</a></li>
+		</ul>
+	</nav>
+	<div class="search-bar"><input type="text"></div>
+	<div class="account-control">
+		<div class="all-companies">Все компании</div>
+		<!-- <div class="account-name">+7 (900) 789-56-34</div> -->
+		<a href="#" class="icon--settings"></a>
+		<a href="#" class="icon--logout"></a>
+	</div>
+</header>
+
+<!-- Основное содержимое -->
+<main>
+	<div class="content-wrapper page full-width page--application page--application--documents-request ">
+		<div class="go-back">Список заявок</div>
+		
+		<div class="content">
+			<h1>№ 000658</h1>
+
+			<aside class="top-bar">
+				<!-- Вкладки -->
+				<ul class="tabs">
+					<li class="tab">Компания</li>
+					<li class="tab">Аукцион</li>
+					<li class="tab">Опыт клиента</li>
+					<li class="tab">Торги банков</li>
+					<li class="tab tab--active">Документы</li>
+					<li class="tab">Предложение банка</li>
+					<li class="tab">Журнал работы</li>
+				</ul>
+			</aside>
+
+			<h3>Запрос документов</h3>
+			<div class="search-block">
+				<input type="text" name="">
+			</div>
+
+			<h3>Финансовые</h3>
+			<div class="checkbox">
+				<input type="checkbox" id="check1" checked>
+				<label for="check1">Бухгалтерский баланс — форма №1 за последний завершенный год</label>
+			</div>
+			<div class="checkbox">
+				<input type="checkbox" id="check2">
+				<label for="check2">Бухгалтерский баланс — форма №1 за последнюю отчетную (квартальную) дату</label>
+			</div>
+			<div class="checkbox document--uploaded">
+				<input type="checkbox" id="check3" checked>
+				<label for="check3">Отчет о финансовых результатах — форма №2 за последний завершенный год</label>
+			</div>
+			<div class="checkbox document--uploaded">
+				<input type="checkbox" id="check4">
+				<label for="check4">Отчет о финансовых результатах — форма №2  за последнюю отчетную квартальную дату</label>
+			</div>
+			<div class="checkbox document--uploaded">
+				<input type="checkbox" id="check5">
+				<label for="check5">Налоговая декларация 3-НДФЛ с отметкой ИФНС за последний завершенный год</label>
+			</div>
+
+			<h3>Юридические</h3>
+			<div class="checkbox document--uploaded">
+				<input type="checkbox" id="check6" checked>
+				<label for="check6">Паспорт руководителя</label>
+			</div>
+			<div class="checkbox">
+				<input type="checkbox" id="check7">
+				<label for="check7">Заявление на выдачу БГ (договор оферта)</label>
+			</div>
+			<div class="checkbox document--uploaded">
+				<input type="checkbox" id="check8" checked>
+				<label for="check8">Выписка ЕГРИП</label>
+			</div>
+			<div class="checkbox">
+				<input type="checkbox" id="check9">
+				<label for="check9">Учредительный договор</label>
+			</div>
+
+			<h3>Другие</h3>
+			<div class="checkbox">
+				<input type="checkbox" checked id="check9">
+				<label for="check9">ОСВ по 60, 62, 66, 67, 76 счетам</label>
+			</div>
+			<div class="checkbox document--uploaded">
+				<input type="checkbox" id="check10">
+				<label for="check10">Договор аренды</label>
+			</div>
+			<div class="checkbox">
+				<input type="checkbox" checked id="check11">
+				<label for="check11">Платежное поручение об облате штрафа</label>
+			</div>
+			<div class="checkbox document--uploaded">
+				<input type="checkbox" id="check12">
+				<label for="check12">Промежуточные акты выполненных работ</label>
+			</div>
+			<div class="checkbox">
+				<input type="checkbox" id="check13">
+				<label for="check13">ГРН к последнему изменению</label>
+			</div>
+
+			<div class="label-value mt20">
+				<!-- <label class="input-label"></label> -->
+				<input type="text" value="" placeholder="Комментарий">
+			</div>
+
+			<div class="buttons-container">
+				<button class="clean">Запросить</button>
+			</div>
+		</div>
+	
+		<!-- Нижняя панель -->
+		<div class="page__bottom-panel">
+			<div class="buttons-container">
+				<button class="red">отказать</button>
+				<button class="secondary">одобрить</button>
+			</div>
+		</div>
+	</div>
+</main>
+
+<footer>
+	<a href="#">Правила работы платформы</a>
+	<a href="#">Инструкция по использованию</a>
+	<a href="#">Частые вопросы</a>
+	<a href="#">Контакты</a>
+
+	<div class="footer__role">б</div>
+</footer>
+
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+</body>
+</html>

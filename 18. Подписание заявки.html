@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Подписание заявки</title>
+	<link rel="stylesheet" href="css.css">
+</head>
+<body>
+
+	<!-- Переход на следующий экран -->
+	<a href="19. Спасибо.html">следующий экран</a>
+
+
+<header>
+	<div class="header__title">Банковские гарантии</div>
+	<nav>
+		<ul>
+			<li class="active"><a href="#">Мои заявки</a></li>
+			<li><a href="#">Аукционы</a></li>
+			<li><a href="#">Аналитика</a></li>
+		</ul>
+	</nav>
+	<div class="search-bar"><input type="text"></div>
+	<div class="account-control">
+		<div class="all-companies">Все компании</div>
+		<!-- <div class="account-name">+7 (900) 789-56-34</div> -->
+		<a href="#" class="icon--settings"></a>
+		<a href="#" class="icon--logout"></a>
+	</div>
+</header>
+
+<!-- Основное содержимое -->
+<main>
+	<div class="content-wrapper page page--send-application">
+		<div class="content">
+			<h1>Отправка заявки в банки</h1>
+			<div class="usb-token-illustration"></div>
+			<p class="description-text">Необходимо подписать заявку ЭЦП. С этого момента вся информация в ней становится юридически значимой. <br>Вставьте токен в USB-разъём или выберите файл сертификата</p>
+
+			<div class="documents-list">
+				<!-- допклассы done, loading, link -->
+				<div class="document-item link"><a href="#">Бухгалтерский баланс — форма №1 за последний завершенный год</a></div>
+				<div class="document-item link"><a href="#">Бухгалтерский баланс — форма №1 за последнюю отчетную (квартальную) дату</a></div>
+				<div class="document-item link"><a href="#">Отчет о финансовых результатах — форма №2 за последний завершенный год</a></div>
+				<div class="document-item link"><a href="#">Отчет о финансовых результатах — форма №2  за последнюю отчетную квартальную дату</a></div>
+				<div class="document-item link"><a href="#">Налоговая декларация 3-НДФЛ с отметкой ИФНС за последний завершенный год</a></div>
+				<div class="document-item link"><a href="#">Паспорт руководителя Иванова Н. С.</a></div>
+				<div class="document-item link"><a href="#">Паспорт руководителя Петрова Ф. К.</a></div>
+				<div class="document-item link"><a href="#">Заявление на выдачу БГ (договор оферта)</a></div>
+				<div class="document-item link"><a href="#">Выписка ЕГРИП</a></div>
+			</div>
+
+			<div class="select-wrapper selected">
+				<label class="input-label">Выберите электронную подпись</label>
+				<select name="" id="" required>
+					<option value="" disabled>Вид гарантии</option>
+					<option value="">пункт 1</option>
+					<option value="" selected>Достоевский Фёдор Михайлович</option>
+					<option value="">пункт 3</option>
+					<option value="">пункт 4</option>
+				</select>
+			</div>
+
+			<div class="buttons-container">
+				<button class="primary">подписать</button>
+			</div>
+		</div>
+	</div>
+</main>
+
+<footer>
+	<a href="#">Правила работы платформы</a>
+	<a href="#">Инструкция по использованию</a>
+	<a href="#">Частые вопросы</a>
+	<a href="#">Контакты</a>
+
+	<div class="footer__role">к</div>
+</footer>
+
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+</body>
+</html>

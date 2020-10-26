@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Выбранные предложения</title>
+	<link rel="stylesheet" href="css.css">
+</head>
+<body>
+
+	<!-- Переход на следующий экран -->
+	<a href="22.2 Запрос документов.html">следующий экран</a>
+
+<header>
+	<div class="header__title">Банковские гарантии</div>
+	<nav>
+		<ul>
+			<li class="active"><a href="#">Мои заявки</a></li>
+			<li><a href="#">Аукционы</a></li>
+			<li><a href="#">Аналитика</a></li>
+		</ul>
+	</nav>
+	<div class="search-bar"><input type="text"></div>
+	<div class="account-control">
+		<div class="all-companies">Все компании</div>
+		<!-- <div class="account-name">+7 (900) 789-56-34</div> -->
+		<a href="#" class="icon--settings"></a>
+		<a href="#" class="icon--logout"></a>
+	</div>
+</header>
+
+<!-- Основное содержимое -->
+<main>
+	<div class="content-wrapper page page--application">
+		<div class="go-back">Список заявок</div>
+
+		<div class="content full-width">
+			<h1>№ 000658</h1>
+
+			<aside class="top-bar">
+				<!-- Вкладки -->
+				<ul class="tabs">
+					<li class="tab tab--active">Предложения банков</li>
+					<li class="tab">Компания</li>
+					<li class="tab">Аукцион</li>
+					<li class="tab">Опыт клиента</li>
+					<li class="tab">Документы</li>
+					<li class="tab">Запросы документов<i class="label--alert">2</i></li>
+				</ul>
+			</aside>
+
+			<h3 class="center">Выбранные предложения</h3>
+
+			<!-- Плитки -->
+			<div class="tiles-container selected-bank-offers">
+				<div class="tile">
+					<div class="tile__header">
+						<i class="icon--label filled"></i>
+						<div class="title">Модульбанк</div>
+						<div class="commission">Комиссия 12 500 ₽</div>
+					</div>
+
+					<!-- список -->
+					<ul class="checklist">
+						<li class="icon--check">Банк согласовал форму гарантии</li>
+						<li class="icon--check">Заказчик согласовал форму гарантии</li>
+						<li>Загрузите документы по запросу</li>
+						<li>Оплатите счет</li>
+					</ul>
+
+					<div class="tile__footer">
+						<button class="primary tiny">К оформлению</button>
+					</div>
+				</div>
+
+				<div class="tile">
+					<div class="tile__header">
+						<i class="icon--label filled"></i>
+						<div class="title">Локобанк</div>
+						<div class="commission">Комиссия 15 000 ₽</div>
+					</div>
+
+					<!-- список -->
+					<ul class="checklist">
+						<li class="icon--check">Банк согласовал форму гарантии</li>
+						<li>Загрузите документы по запросу</li>
+						<li>Оплатите счет</li>
+					</ul>
+
+					<div class="tile__footer">
+						<button class="primary tiny">К оформлению</button>
+					</div>
+				</div>
+			</div>
+
+			<h3 class="center">Выберите предложения</h3>
+			<div class="description-text highlighted">Отметьте значком <i class="icon--label"></i> интересные вам предложения, чтобы начать оформлять гарантию</div>
+
+			<table class="bank-offers client-view">
+				<thead>
+					<tr>
+						<th></th>
+						<th><a href="">Банк</a></th>
+						<th><a href="">Сумма гарантии</a></th>
+						<th class="up"><a href="">Срок гарантии</a></th>
+						<th class="down"><a href="">Ставка банка</a></th>
+						<th><a href="">Предложение до</a></th>
+						<th class="additional-need"><a href="">Дополнительно потребуется</a></th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td><i class="icon--label filled"></i></td>
+						<td>Модульбанк</td>
+						<td class="sum">22 125 000,<span class="decimal">25</span></td>
+						<td>21.01—22.06</td>
+						<td class="rate rate green-value">12 500,<span class="decimal">65</span></td>
+						<td>8 января</td>
+						<td class="additional-need"></td>
+					</tr>
+					<tr>
+						<td><i class="icon--label"></i></td>
+						<td>Тинькофф</td>
+						<td class="sum"></td>
+						<td></td>
+						<td class="rate"></td>
+						<td></td>
+						<td class="additional-need"></td>
+					</tr>
+					<tr>
+						<td><i class="icon--label filled"></i></td>
+						<td>Локобанк</td>
+						<td class="sum">1 145 000</td>
+						<td>21.01—22.06</td>
+						<td class="rate red-value">14 500,<span class="decimal">22</span></td>
+						<td>22 января</td>
+						<td class="additional-need">Форма №1 за последний завершенный год</td>
+					</tr>
+					<tr>
+						<td><i class="icon--label"></i></td>
+						<td>Альфабанк</td>
+						<td class="sum">32 125 000,<span class="decimal">65</span></td>
+						<td>21.01—22.06</td>
+						<td class="rate green-value">312 500,<span class="decimal">19</span></td>
+						<td>8 января</td>
+						<td class="additional-need"></td>
+					</tr>
+					<tr>
+						<td><i class="icon--label"></i></td>
+						<td>Локобанк</td>
+						<td class="sum">6 145 000</td>
+						<td>21.01—22.06</td>
+						<td class="rate red-value">14 500,<span class="decimal">22</span></td>
+						<td>22 января</td>
+						<td class="additional-need">Форма №1 за последний завершенный год</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+</main>
+
+<footer>
+	<a href="#">Правила работы платформы</a>
+	<a href="#">Инструкция по использованию</a>
+	<a href="#">Частые вопросы</a>
+	<a href="#">Контакты</a>
+
+	<div class="footer__role">к</div>
+</footer>
+
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+</body>
+</html>
