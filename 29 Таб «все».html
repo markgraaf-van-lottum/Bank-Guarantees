@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Вкладка "Все"</title>
+	<link rel="stylesheet" href="css.css">
+</head>
+<body>
+
+	<!-- Переход на следующий экран -->
+	<a href="29_. Кабинет_много заявок.html">следующий экран</a>
+
+
+<header>
+	<div class="header__title">Банковские гарантии</div>
+	<nav>
+		<ul>
+			<li class="active"><a href="#">Мои заявки</a></li>
+			<li><a href="#">Аукционы</a></li>
+			<li><a href="#">Аналитика</a></li>
+		</ul>
+	</nav>
+	<div class="search-bar"><input type="text"></div>
+	<div class="account-control">
+		<div class="all-companies">Все компании</div>
+		<!-- <div class="account-name">+7 (900) 789-56-34</div> -->
+		<a href="#" class="icon--settings"></a>
+		<a href="#" class="icon--logout"></a>
+	</div>
+</header>
+
+<!-- Основное содержимое -->
+<main>
+	<div class="content-wrapper applications-and-guarantees--client adaptive-small-paddings">
+		<div class="content">
+			<!-- Секция "ТЕКУЩИЕ ЗАЯВКИ" -->
+			<h2>Текущие заявки</h2>
+
+			<aside class="top-bar">
+				<!-- Вкладки -->
+				<ul class="tabs">
+					<li class="tab tab--active">Все</li>
+					<li class="tab">На рассмотрении</li>
+					<li class="tab">Одобрены</li>
+					<li class="tab">Торги банков</li>
+					<li class="tab">Оплачены</li>
+					<li class="tab">Готовые</li>
+					<li class="tab">Черновики</li>
+					<li class="tab">Отказ</li>
+				</ul>
+
+				<!-- Свитчер (grid/list) -->
+				<div class="view-switcher applications list">
+					<i class="view--grid"></i>
+					<i class="view--list"></i>
+				</div>
+			</aside>
+
+			<!-- Плитки (Заявки) -->
+			<div class="tiles-container tiles--grid-list applications--client applications--tab-all list-view">
+				<div class="tile add-new"></div>
+				
+				<aside class="header-row">
+					<div class="number">№ заявки</div>
+					<div class="company">Компания</div>
+					<div class="type">Тип гарантии</div>
+					<div class="auction">Аукцион №, заказчик</div>
+					<div class="amount">Сумма</div>
+					<div class="guarantee-period">Срок</div>
+					<div class="best-rate">Лучшая ставка</div>
+				</aside>
+
+				<div class="tile status--draft">
+					<div class="number">0002664</div>
+					<div class="company">ООО «Стройпромгазсервис»</div>
+					<div class="type">ФЗ 223</div>
+					<div class="kind">На гарантийные обязательства</div>
+					<div class="auction">54598563214569875412</div>
+					<div class="customer">ООО «Ространссельхозмаш»</div>
+					<div class="amount inline">10 850 000,<span class="decimal">27</span> ₽</div>
+					<div class="guarantee-period inline">14.01—01.02</div>
+					<div class="best-rate">250 000 ₽</div>
+
+					<i class="label"></i>
+				</div>
+
+				<div class="tile status--paid">
+					<div class="number">0002664</div>
+					<div class="company">ООО «Стройпромгазсервис»</div>
+					<div class="type">ФЗ 223</div>
+					<div class="kind">На гарантийные обязательства</div>
+					<div class="auction">54598563214569875412</div>
+					<div class="customer">ООО «Ространссельхозмаш»</div>
+					<div class="amount inline">10 850 000,<span class="decimal">27</span> ₽</div>
+					<div class="guarantee-period inline">14.01—01.02</div>
+					<div class="best-rate">250 000 ₽</div>
+
+					<i class="label"></i>
+				</div>
+
+				<div class="tile status--reject">
+					<div class="number">0002664</div>
+					<div class="company">ООО «Стройпромгазсервис»</div>
+					<div class="type">ФЗ 223</div>
+					<div class="kind">На гарантийные обязательства</div>
+					<div class="auction">54598563214569875412</div>
+					<div class="customer">ООО «Ространссельхозмаш»</div>
+					<div class="amount inline">10 850 000,<span class="decimal">27</span> ₽</div>
+					<div class="guarantee-period inline">14.01—01.02</div>
+					<div class="best-rate">250 000 ₽</div>
+
+					<i class="label"></i>
+				</div>
+
+				<div class="tile status--complete">
+					<div class="number">0002668</div>
+					<div class="company">ООО «Стройпромгазсервис»</div>
+					<div class="type">ФЗ 223</div>
+					<div class="kind">На участие</div>
+					<div class="auction">54598563214569875412</div>
+					<div class="customer">ФГУП "РОСМОРПОРТ"</div>
+					<div class="amount inline">850 000<span class="decimal"></span> ₽</div>
+					<div class="guarantee-period inline">12.01—06.02</div>
+					<div class="best-rate">50 000 ₽</div>
+
+					<i class="label"></i>
+
+					<!-- лейбл -->
+					<i class="label--alert">1</i>
+				</div>
+
+				<div class="tile status--approved">
+					<div class="number">0002668</div>
+					<div class="company">ООО «Стройпромгазсервис»</div>
+					<div class="type">ФЗ 223</div>
+					<div class="kind">На участие</div>
+					<div class="auction">54598563214569875412</div>
+					<div class="customer">ФГУП "РОСМОРПОРТ"</div>
+					<div class="amount inline">850 000<span class="decimal"></span> ₽</div>
+					<div class="guarantee-period inline">12.01—06.02</div>
+					<div class="best-rate">50 000 ₽</div>
+
+					<i class="label"></i>
+				</div>
+
+				<div class="tile status--on-review">
+					<div class="number">0002668</div>
+					<div class="company">ООО «Стройпромгазсервис»</div>
+					<div class="type">ФЗ 223</div>
+					<div class="kind">На участие</div>
+					<div class="auction">54598563214569875412</div>
+					<div class="customer">ФГУП "РОСМОРПОРТ"</div>
+					<div class="amount inline">850 000<span class="decimal"></span> ₽</div>
+					<div class="guarantee-period inline">12.01—06.02</div>
+					<div class="best-rate">50 000 ₽</div>
+
+					<i class="label"></i>
+				</div>
+			</div>
+
+
+
+			<!-- Секция "БАНКОВСКИЕ ГАРАНТИИ" -->
+			<h2>Банковские гарантии</h2>
+
+			<aside class="top-bar">
+				<!-- Вкладки -->
+				<ul class="tabs">
+					<li class="tab tab--active">Все</li>
+					<li class="tab">Выданы</li>
+					<li class="tab">Завершены</li>
+					<li class="tab">Поступило требование</li>
+					<li class="tab">Раскрыты</li>
+					<li class="tab">Погашены</li>
+				</ul>
+
+				<select name="" id="">
+					<option value="" disabled selected>Год</option>
+					<option value="">2018</option>
+					<option value="">2019</option>
+					<option value="">2020</option>
+					<option value="">2021</option>
+				</select>
+
+				<!-- Свитчер (grid/list) -->
+				<div class="view-switcher guarantees grid">
+					<i class="view--grid"></i>
+					<i class="view--list"></i>
+				</div>
+			</aside>
+
+			<!-- Плитки (Банковские гарантии) -->
+			<div class="tiles-container tiles--grid-list guarantees--client guarantees--tab-all grid-view">
+				<aside class="header-row">
+					<div class="number">№ заявки</div>
+					<div class="customer">Заказчик</div>
+					<div class="auction">Аукцион №</div>
+					<div class="application-amount">Число заявок</div>
+					<div class="guarantee-amount">Количество <br>БГ</div>
+					<div class="guarantee-sum">Сумма <br>БГ</div>
+					<div class="paid-commission">Выплаченная комиссия&nbsp;за&nbsp;БГ</div>
+				</aside>
+
+				<div class="tile status--issued">
+					<div class="number">0002664</div>
+					<div class="customer">ООО «Ространссельхозмаш»</div>
+					<div class="auction">54598563214569875412</div>
+					<div class="application-amount">15</div>
+					<div class="guarantee-amount inline">6 шт.</div>
+					<div class="guarantee-sum inline">750 000,<span class="decimal">45</span> ₽</div>
+					<div class="paid-commission inline">150 000,<span class="decimal">45</span> ₽</div>
+
+					<i class="label"></i>
+				</div>
+
+				<div class="tile status--finished">
+					<div class="number">0002668</div>
+					<div class="customer">ФГУП "РОСМОРПОРТ"</div>
+					<div class="auction">54598563214569875412</div>
+					<div class="application-amount">15</div>
+					<div class="guarantee-amount inline">6 шт.</div>
+					<div class="guarantee-sum inline">750 000,<span class="decimal">45</span> ₽</div>
+					<div class="paid-commission inline">150 000 ₽</div>
+
+					<i class="label"></i>
+				</div>
+
+				<div class="tile status--requirement">
+					<div class="number">0002668</div>
+					<div class="customer">ФГУП "РОСМОРПОРТ"</div>
+					<div class="auction">54598563214569875412</div>
+					<div class="application-amount">15</div>
+					<div class="guarantee-amount inline">6 шт.</div>
+					<div class="guarantee-sum inline">750 000,<span class="decimal">45</span> ₽</div>
+					<div class="paid-commission inline">150 000 ₽</div>
+
+					<i class="label"></i>
+				</div>
+
+				<div class="tile status--opened">
+					<div class="number">0002668</div>
+					<div class="customer">ФГУП "РОСМОРПОРТ"</div>
+					<div class="auction">54598563214569875412</div>
+					<div class="application-amount">15</div>
+					<div class="guarantee-amount inline">6 шт.</div>
+					<div class="guarantee-sum inline">750 000,<span class="decimal">45</span> ₽</div>
+					<div class="paid-commission inline">150 000 ₽</div>
+
+					<i class="label"></i>
+				</div>
+
+				<div class="tile status--paid-off">
+					<div class="number">0002668</div>
+					<div class="customer">ФГУП "РОСМОРПОРТ"</div>
+					<div class="auction">54598563214569875412</div>
+					<div class="application-amount">15</div>
+					<div class="guarantee-amount inline">6 шт.</div>
+					<div class="guarantee-sum inline">750 000,<span class="decimal">45</span> ₽</div>
+					<div class="paid-commission inline">150 000 ₽</div>
+
+					<i class="label"></i>
+				</div>
+			</div>
+		</div>
+	</div>
+</main>
+
+<footer>
+	<a href="#">Правила работы платформы</a>
+	<a href="#">Инструкция по использованию</a>
+	<a href="#">Частые вопросы</a>
+	<a href="#">Контакты</a>
+
+	<div class="footer__role">к</div>
+</footer>
+
+<script src="view-switcher.js"></script>
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+</body>
+</html>

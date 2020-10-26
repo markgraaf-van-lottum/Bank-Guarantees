@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>UI KIT</title>
+	<link rel="stylesheet" href="css.css">
+	<style type="text/css">
+		body {margin: 16px;}
+		body::after{content: '';display: block;height: 20px;}
+		block-label{display: block;font-size: 26px;color: royalblue;border-bottom: 3px solid royalblue;padding-bottom: 4px;margin: 44px 0 16px;opacity: 0.7;}
+		block-label:first-child{margin-top: 0;}
+		.buttons-container {margin: 0 !important;background: #e7e7e7;padding: 16px 16px 0;}
+		button{margin-bottom: 16px;}
+		[class*="icon--"] + [class*="icon--"] {margin-left: 10px;}
+		input:not(:last-child){margin: 0 20px 16px 0;}
+		.upload-area{margin-top: 0;}
+		.switcher{display: inline-block;margin: 0;}
+		dib{display: inline-block;position: relative;margin-right: 20px;}
+		dib>i{top: -14px !important;left: 0 !important;right: auto !important;}
+		.tile{margin-right: 0;}
+		.tile .label{margin: 4px 0 0 0px !important;width: auto !important;}
+	</style>
+</head>
+<body>
+
+<!-- Кнопки -->
+<block-label>Кнопки</block-label>
+<div class="buttons-container">
+	<button class="primary">Текст кнопки</button>
+	<button class="secondary">Текст кнопки</button>
+	<button class="clean">Текст кнопки</button>
+	<button class="clean-white">Текст кнопки</button>
+	<button disabled>Кнопка disable</button>
+	<button class="primary small">Маленькая кнопка</button>
+</div>
+<!-- Поля -->
+<block-label>Поля</block-label>
+<div class="label-value">
+	<label class="input-label">Сумма гарантии</label>
+	<input type="text" value="129 800,50 ₽">
+</div>
+
+<input type="text" name="" value="Valid">
+<input type="text" name="" value="Invalid" class="invalid">
+<input type="text" name="" placeholder="focus" autofocus>
+<input type="text" name="" placeholder="placeholder">
+<input type="text" class="big-text" value="Крупный текст">
+<textarea name="" id="" rows="3">textarea</textarea>
+
+<!-- Селект -->
+<block-label>Селект</block-label>
+<div class="select-wrapper">
+	<label class="input-label">Подпись селекта</label>
+	<select name="" id="" required>
+		<option value="" disabled selected>Плейсхолдер</option>
+		<option value="">пункт 1</option>
+		<option value="">пункт 2</option>
+		<option value="">пункт 3</option>
+		<option value="">пункт 4</option>
+	</select>
+</div>
+
+<!-- Чекбокс -->
+<block-label>Чекбокс</block-label>
+<div class="checkbox">
+	<input type="checkbox" id="check1" checked>
+	<label for="check1">Выбранный</label>
+</div>
+<div class="checkbox">
+	<input type="checkbox" id="check2">
+	<label for="check2">Невыбранный</label>
+</div>
+
+<!-- Иконки -->
+<block-label>Иконки</block-label>
+<div>
+	<i class="icon--label"></i>
+	<i class="icon--label filled"></i>
+	<i class="icon--arrow-left"></i>
+	<i class="icon--attention"></i>
+	<i class="icon--help"></i>
+	<i class="icon--check--round"></i>
+	<i class="icon--search"></i>
+	<i class="icon--check"></i>
+	<i class="icon--down"></i>
+	<i class="icon--close"></i>
+	<i class="icon--plus"></i>
+	<i class="icon--doc-pdf"></i>
+	<i class="icon--doc"></i>
+	<i class="icon--link"></i>
+	<i class="icon--date"></i>
+	<i class="icon--building"></i>
+	<i class="icon--settings"></i>
+	<i class="icon--logout"></i>
+</div>
+
+<!-- Лейблы -->
+<block-label>Лейблы</block-label>
+<i class="label label--green">label--green</i>
+<dib>
+	<i class="label--alert">5</i>
+</dib>
+<dib>
+	<i class="label--many-applications">5</i>
+</dib>
+<div>
+	<dib class="tile status--draft">
+		<div class="label"></div>
+	</dib>
+	<dib class="tile status--paid">
+		<div class="label"></div>
+	</dib>
+	<dib class="tile status--reject">
+		<div class="label"></div>
+	</dib>
+	<dib class="tile status--complete">
+		<div class="label"></div>
+	</dib>
+	<dib class="tile status--on-review">
+		<div class="label"></div>
+	</dib>
+	<dib class="tile status--approved">
+		<div class="label"></div>
+	</dib>
+	<dib class="tile status--issued">
+		<div class="label"></div>
+	</dib>
+	<dib class="tile status--finished">
+		<div class="label"></div>
+	</dib>
+	<dib class="tile status--requirement">
+		<div class="label"></div>
+	</dib>
+	<dib class="tile status--opened">
+		<div class="label"></div>
+	</dib>
+	<dib class="tile status--paid-off">
+		<div class="label"></div>
+	</dib>
+</div>
+
+<!-- Область загрузки -->
+<block-label>Область загрузки</block-label>
+<div class="upload-area">Загрузите файл</div>
+
+<!-- Переключатель -->
+<block-label>Переключатель</block-label>
+<form class="switcher">
+	<input id="radio-1" name="radio" type="radio" value="scan-BG">
+	<label for="radio-1">Скан БГ</label>
+	<input id="radio-2" name="radio" type="radio" value="with-EDS">
+	<label for="radio-2">С ЭЦП</label>
+</form>
+
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+</body>
+</html>

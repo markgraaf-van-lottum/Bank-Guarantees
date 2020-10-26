@@ -1,0 +1,101 @@
+@charset "UTF-8";
+
+@import url(css/normalize.css);
+@import url(css/fonts.css);
+@import url(css/layout.css);
+@import url(css/ui.css);
+@import url(css/icons.css);
+@import url(css/icons-font.css);
+@import url(css/components.css);
+@import url(css/auth.css);
+@import url(css/main.css);
+
+/* ========   Временные стили   ======== */
+body>a:first-child{position: fixed;bottom: 16px;left: 16px;background: tomato;border-radius: 4px;color: #fff;font-weight: 300;padding: 7px 12px 8px;text-decoration: none;z-index: 5;}
+/* ========   Временные стили   ======== */
+
+html {
+	height: 100%;
+}
+body {
+	height: 100%;
+	font-family: Roboto, sans-serif;
+	font-size: 16px;
+	color: #243036;
+	cursor: default;
+	overflow-x: hidden;
+	user-select: none;
+}
+a,
+p,
+div,
+aside {
+	box-sizing: border-box;
+	position: relative;
+}
+body,
+section,
+div,
+i {
+	background-repeat: no-repeat !important;
+}
+
+h1 {
+	font-size: 36px;
+	line-height: 42px;
+	font-weight: normal;
+	margin: 0 0 20px;
+}
+h2,
+.page h1 {
+	font-size: 26px;
+	line-height: 31px;
+	font-weight: normal;
+	margin: 0 0 24px;
+}
+h3 {
+	font-size: 20px;
+	line-height: 1.2;
+	font-weight: normal;
+	margin: 0 0 24px;
+}
+h3.center {
+	text-align: center;
+}
+p {
+	margin: 0;
+}
+a {
+	color: #3082ce;
+	transition: color .2s;
+}
+a:hover {
+}
+
+/* Вспомогательные классы (фреймворк) */
+.mt16 {
+	margin-top: 16px !important;
+}
+
+
+/* Адаптив */
+@media screen and (max-width: 875px) {
+	.main__container.page {
+		padding: 0 40px;
+	}
+}
+@media screen and (max-width: 1030px) {
+	.content-wrapper.adaptive-small-paddings {
+		padding: 20px 20px 0;
+	}
+	.content-wrapper.adaptive-small-paddings .page__bottom-panel {
+		margin-left: -20px;
+		margin-right: -20px;
+	}
+	.content-wrapper.adaptive-small-paddings .page--application--documents .comments-block .comment-item + .comment-item::before,
+	.content-wrapper.adaptive-small-paddings .page--application--documents .comments-block.border-bottom .comment-item:last-child::after,
+	.content-wrapper.adaptive-small-paddings .page--application--documents .documents-type-group::after {
+		left: -20px;
+		right: -20px;
+	}
+}

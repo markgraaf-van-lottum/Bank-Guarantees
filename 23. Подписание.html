@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Подписание</title>
+	<link rel="stylesheet" href="css.css">
+</head>
+<body>
+
+	<!-- Переход на следующий экран -->
+	<a href="23.1. Согласование формы.html">следующий экран</a>
+
+<header>
+	<div class="header__title">Банковские гарантии</div>
+	<nav>
+		<ul>
+			<li class="active"><a href="#">Мои заявки</a></li>
+			<li><a href="#">Аукционы</a></li>
+			<li><a href="#">Аналитика</a></li>
+		</ul>
+	</nav>
+	<div class="search-bar"><input type="text"></div>
+	<div class="account-control">
+		<div class="all-companies">Все компании</div>
+		<!-- <div class="account-name">+7 (900) 789-56-34</div> -->
+		<a href="#" class="icon--settings"></a>
+		<a href="#" class="icon--logout"></a>
+	</div>
+</header>
+
+<!-- Основное содержимое -->
+<main>
+	<div class="content-wrapper page">
+		<div class="go-back">Торги</div>
+
+		<div class="content full-width">
+			<h1>Предложение Модульбанка</h1>
+
+			<div class="description-text">Действует до 17.02.2019</div>
+
+			<!-- Предложение -->
+			<div class="tile--bank-offer">
+				<i class="icon--label filled"></i>
+
+				<div class="column">
+					<div class="bank-offer-label">Номер заявки</div>
+					<div class="value">000658</div>
+				</div>
+				<div class="column">
+					<div class="bank-offer-label">Номер аукциона</div>
+					<div class="value"><a href="">26548456541258965475</a></div>
+				</div>
+				<div class="column">
+					<div class="bank-offer-label">Сумма гарантии</div>
+					<div class="value">125 000 ₽</div>
+				</div>
+				<div class="column">
+					<div class="bank-offer-label">Срок</div>
+					<div class="value">28.12.2018 — 8.01.2019</div>
+				</div>
+				<div class="column">
+					<div class="bank-offer-label">Ставка</div>
+					<div class="value">3,5 %</div>
+				</div>
+				<div class="column">
+					<div class="bank-offer-label">Комиссия</div>
+					<div class="value">12 500,<span class="decimal">35</span> ₽</div>
+				</div>
+				<div class="document-item link"><a href="#">Договор оферты</a></div>
+			</div>
+
+			<!-- Секция 1 -->
+			<div class="bank-offer__section">
+				<h3>1. Согласуйте форму гарантии</h3>
+				<div class="description-text">Если необходимо изменение формы</div>
+				<flex>
+					<select name="" id="" required>
+						<option value="" disabled selected>История операций</option>
+						<option value="">пункт 1</option>
+						<option value="">пункт 2</option>
+					</select>
+
+					<div class="document-item link"><a href="">Текущая согласованная форма БГ</a></div>
+				</flex>
+
+				<div class="buttons-container">
+					<button class="clean">согласовать форму БГ</button>
+					<button class="clean">Отправить форму заказчику</button>
+					<button class="primary">Форма согласована</button>
+				</div>
+			</div>
+
+			<!-- Секция 2 -->
+			<div class="bank-offer__section">
+				<h3>2. Загрузите дополнительные документы</h3>
+
+				<div class="tiles-container documents upload-additional-docs">
+					<div class="tile">
+						<p class="text--main">Лицензия</p>
+						<p class="text--hover">За последний отчетный период</p>
+					</div>
+					<div class="tile">
+						<p class="text--main">Доверенность, нотариально заверенная на подписанта</p>
+						<p class="text--hover">За последний отчетный период</p>
+					</div>
+					<div class="tile">
+						<p class="text--main">Удостоверение личности подписанта по доверенности</p>
+						<p class="text--hover">За последний отчетный период</p>
+					</div>
+				</div>
+
+				<div class="buttons-container">
+					<button class="primary" disabled>Отправить в банк</button>
+				</div>
+			</div>
+
+			<!-- Секция 3 -->
+			<div class="bank-offer__section">
+				<h3>3. Оплатите счёт, чтобы принять предложение банка</h3>
+				<div class="description-text highlighted"><i class="icon--attention"></i>Перед оплатой счёта необходимо согласовать форму гарантии и загрузить дополнительные документы</div>
+
+				<div class="buttons-container">
+					<input type="text" value="box@email.io">
+					<button class="clean">Отправить счет на e-mail</button>
+					<button class="clean">Скачать счет</button>
+				</div>
+			</div>
+
+			<!-- Секция 4 -->
+			<div class="bank-offer__section no-border">
+				<h3>Сообщите банку, когда счёт будет оплачен</h3>
+				<div class="description-text">По желанию можете прикрепить платёжку</div>
+
+				<flex class="upload-payroll">
+					<div class="tiles-container documents">
+						<div class="tile">
+							<p class="text--main">Загрузите платёжку</p>
+						</div>
+					</div>
+
+					<button class="primary">Счет оплачен</button>
+				</flex>
+			</div>
+		</div>
+	</div>
+</main>
+
+<footer>
+	<a href="#">Правила работы платформы</a>
+	<a href="#">Инструкция по использованию</a>
+	<a href="#">Частые вопросы</a>
+	<a href="#">Контакты</a>
+
+	<!-- Кнопка в подвале -->
+	<div class="buttons-container mt6">
+		<button class="secondary">Банк</button>
+	</div>
+
+	<div class="footer__role">к</div>
+</footer>
+
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+</body>
+</html>

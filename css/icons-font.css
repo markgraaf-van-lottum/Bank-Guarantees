@@ -1,0 +1,95 @@
+@charset "UTF-8";
+
+@font-face {
+	font-family: "icon-font-bg";
+	src:url("../fonts/icon-font-bg.eot");
+	src:url("../fonts/icon-font-bg.eot?#iefix") format("embedded-opentype"),
+		url("../fonts/icon-font-bg.woff") format("woff"),
+		url("../fonts/icon-font-bg.ttf") format("truetype"),
+		url("../fonts/icon-font-bg.svg#icon-font-bg") format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
+
+.search-block::after,
+.label--many-applications::after,
+.tile.add-new::before,
+.page--application--documents .document-item .date-valid::after,
+.comments-block h2.collapse::after,
+.tiles-container.documents:not(.grid--upload-docs) .tile:not(.docs-uploaded):hover::before,
+.tiles-container.banks [type="checkbox"] + label::before,
+.go-back:before,
+header .all-companies:before,
+header .all-companies:after,
+header .search-bar:after,
+[class^="icon--"]:before,
+[class*=" icon--"]:before {
+	font-family: "icon-font-bg" !important;
+	font-style: normal !important;
+	font-weight: normal !important;
+	font-variant: normal !important;
+	text-transform: none !important;
+	speak: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+a[class*="icon--"]:not(.icon--link) {
+	color: inherit;
+	text-decoration: none;
+}
+
+.icon--arrow-left:before {content: "\6e";}
+.icon--attention:before {content: "\61";}
+.icon--building:before {content: "\69";}
+.icon--check--round:before {content: "\6b";color: #88BD1F;}
+.icon--check:before {content: "\6a";}
+.icon--close:before {content: "\6c";}
+.icon--date:before {content: "\68";}
+.icon--doc-pdf:before {content: "\62";}
+.icon--doc:before {content: "\6d";}
+.icon--down:before {content: "\6f";}
+.icon--help:before {content: "\63";}
+.icon--link:before {content: "\64";}
+.icon--logout:before {content: "\65";}
+.icon--plus:before {content: "\70";}
+.icon--search:before {content: "\66";}
+.icon--settings:before {content: "\67";}
+
+
+/* кастомные иконки */
+header .all-companies:before {
+	content: "\69";
+	font-size: 18px;
+	vertical-align: bottom;
+	margin-right: 10px;
+}
+header .all-companies:after {
+	content: "\6f";
+	font-size: 7px;
+	vertical-align: 2px;
+	margin-left: 10px;
+}
+header .search-bar::after {
+	content: "\66";
+	font-size: 16px;
+	position: absolute;
+	bottom: 3px;
+	right: 2px;
+}
+header .search-bar:focus::after {opacity: 0;}
+.go-back::before {
+	content: "\6e";
+	font-size: 12px;
+	vertical-align: -1px;
+	margin-right: 8px;
+	opacity: .88;
+}
+.tiles-container.banks [type="checkbox"] + label::before {content: "\6a";}
+.tiles-container.documents:not(.grid--upload-docs) .tile:not(.docs-uploaded):hover::before {content: "\70";}
+.comments-block h2.collapse::after {content: "\6f";}
+.page--application--documents .document-item .date-valid::after {content: "\68";}
+.tile.add-new::before {content: "\70";}
+.label--many-applications::after {content: "\6a" !important;}
+.search-block::after{content: "\66";}

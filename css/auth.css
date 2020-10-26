@@ -1,0 +1,140 @@
+/* АВТОРИЗАЦИЯ */
+
+body.auth {
+	height: 100%;
+	background: center/cover url(../img/bg--auth.jpg);
+}
+body.auth main {
+	display: flex;
+	background: none;
+}
+/* Форма */
+.auth__form {
+	min-width: 430px;
+	margin: auto;
+	padding: 44px 50px 70px;
+	text-align: center;
+	font-size: 14px;
+}
+.auth__form__title {
+	font-size: 26px;
+	margin-bottom: 32px;
+}
+.auth__form .input-block {
+	max-width: 290px;
+	display: flex;
+	justify-content: flex-end;
+}
+.auth__form .input-block,
+.auth__form .form-description-text {
+	max-width: 300px;
+	margin-left: auto !important;
+	margin-right: auto !important;
+}
+.auth__form input {
+	font-size: 22px;
+}
+.auth__form .input-block input {
+	width: 86%;
+	color: inherit;
+}
+.auth__form .input-block label {
+	font-size: 22px;
+	line-height: 37px;
+	order: -1;
+	margin-right: auto;
+	transition: color .2s;
+}
+.auth__form .input-block:not(.error) input:not(#sms-code):focus + label {
+	color: #0382CE;
+}
+.auth__form .input-block + .input-block + button {
+	margin-top: 60px;
+}
+.auth__form .input-block .icon--help {
+	height: auto;
+	top: 14px;
+	right: auto;
+}
+.auth__form .input-block .icon--help::before {
+	vertical-align: unset;
+}
+/* Проверка номера */
+.auth__form .input-block.loading::before {
+	position: absolute;
+	top: calc(50% - 11px);
+	right: 0;
+}
+.auth__form .input-block.loading .icon--help {
+	display: none;
+}
+.auth__form .input-block.error,
+.auth__form .form-description-text.error {
+	color: #B93535 !important;
+}
+.auth__form .input-block.error input {
+	border-color: inherit;
+}
+@keyframes spin {
+	from 	{transform: rotateZ(0deg);}
+	to 	{transform: rotateZ(360deg);}
+}
+.auth__form .form-description-text {
+	line-height: 20px;
+	margin: 2em 0;
+	color: #50595e;
+}
+.auth__form .form-description-text + .form-description-text {
+	margin-top: -0.8em;
+}
+.auth__form button:last-child,
+.auth__form button:nth-last-child(2),
+.auth__form .send-code:last-child {
+	margin-bottom: -18px;
+}
+.auth__form .send-code {
+	line-height: 50px;
+	color: #50595e;
+}
+.auth__form .send-code.loading::before {
+	vertical-align: middle;
+	margin-right: 10px;
+}
+/* СМС-код */
+.auth__form .input-block + .input-block {
+	margin-top: 32px;
+}
+.auth__form input#sms-code {
+	width: 244px;
+}
+.auth__form .counter {
+	font-size: 26px;
+	color: #243036;
+	margin: 8px 0 4px;
+}
+/* Восстановить пароль */
+.auth__form.password-recover .input-block {
+	margin: -16px 0 20px;
+}
+.auth__form.password-recover .input-block label {
+	margin: auto;
+}
+.auth__form button.outside-auth__form {
+	position: absolute;
+	bottom: -55px;
+	left: 50%;
+	transform: translateX(-50%);
+	margin: 0;
+	font-weight: normal;
+	text-transform: none;
+}
+/* Новый пароль */
+.auth__form.new-password .form-description-text {
+	max-width: 340px;
+	margin-bottom: 32px;
+	color: #717D83;
+}
+.auth__form.new-password input {
+	width: 280px;
+	margin: 0 auto;
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Авторизация (СМС-код)</title>
+	<link rel="stylesheet" href="css.css">
+</head>
+<body class="auth">
+
+	<!-- Переход на следующий экран -->
+	<a href="02.5. Код неправильный.html">следующий экран</a>
+
+	<header>
+		<div class="header__title">Банковские гарантии</div>
+	</header>
+
+	<main>
+		<!-- Форма Авторизации -->
+		<div class="auth__form">
+			<div class="auth__form__title">Вход / регистрация</div>
+
+			<div class="input-block">
+				<label for="phone-number">+7 900-789-56-34</label>
+			</div>
+
+			<!-- смс-код -->
+			<!-- допкласс loading, error -->
+			<div class="input-block ">
+				<input id="sms-code" type="text" pattern="[0-9]{4}" value="8888" autofocus>
+				<label>Код</label>
+			</div>
+		
+			<div class="form-description-text">
+				Выслано СМС с&nbsp;кодом. Введите код.<br>
+				Он&nbsp;станет паролем на&nbsp;первое время.
+			</div>
+			<!-- <div class="form-description-text error">Код неверный. Попробуйте ещё раз.</div> -->
+			<div class="form-description-text">
+				Выслать СМС повторно можно через
+				<p class="counter">22</p>
+				секунды
+			</div>
+			
+			<button class="clean">Указать другой номер</button>
+			<!-- <button class="primary">Выслать смс повторно</button> -->
+		</div>
+	</main>
+
+	<footer>
+		<a href="#">Правила работы платформы</a>
+		<a href="#">Инструкция по использованию</a>
+		<a href="#">Частые вопросы</a>
+		<a href="#">Контакты</a>
+
+		<div class="footer__role">к</div>
+	</footer>
+
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+</body>
+</html>
