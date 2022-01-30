@@ -1,0 +1,16 @@
+/* Адаптив */
+@media screen and (max-width: 1030px) {
+	.content-wrapper.adaptive-small-paddings {
+		padding: 20px 20px 0;
+	}
+	.content-wrapper.adaptive-small-paddings .page__bottom-panel {
+		margin-left: -20px;
+		margin-right: -20px;
+	}
+	.content-wrapper.adaptive-small-paddings .page--application--documents .comments-block .comment-item + .comment-item::before,
+	.content-wrapper.adaptive-small-paddings .page--application--documents .comments-block.border-bottom .comment-item:last-child::after,
+	.content-wrapper.adaptive-small-paddings .page--application--documents .documents-type-group::after {
+		left: -20px;
+		right: -20px;
+	}
+}
