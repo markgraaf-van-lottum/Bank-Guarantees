@@ -1,3 +1,70 @@
+/* ОБЩИЕ СТИЛИ */
+html {
+	height: 100%;
+}
+body {
+	height: 100%;
+	font-family: Roboto, sans-serif;
+	font-size: 16px;
+	color: #243036;
+	cursor: default;
+	overflow-x: hidden;
+	user-select: none;
+}
+a,
+p,
+div,
+aside {
+	box-sizing: border-box;
+	position: relative;
+}
+body,
+section,
+div,
+i {
+	background-repeat: no-repeat !important;
+}
+
+h1 {
+	font-size: 36px;
+	line-height: 42px;
+	font-weight: normal;
+	margin: 0 0 20px;
+}
+h2,
+.page h1 {
+	font-size: 26px;
+	line-height: 31px;
+	font-weight: normal;
+	margin: 0 0 24px;
+}
+h3 {
+	font-size: 20px;
+	line-height: 1.2;
+	font-weight: normal;
+	margin: 0 0 24px;
+}
+h3.center {
+	text-align: center;
+}
+p {
+	margin: 0;
+}
+a {
+	color: #3082ce;
+	transition: color .2s;
+}
+a:hover {
+}
+
+/* Вспомогательные классы (фреймворк) */
+.mt16 {
+	margin-top: 16px !important;
+}
+
+ /* ===================================== */
+ /* ===================================== */
+
 /* Добавление Сотрудника */
 .page.page--add-employee {
 	padding-top: 44px;
